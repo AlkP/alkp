@@ -1,15 +1,44 @@
-<h1>My app ROR</h1>
-
-<br>
-<h3>worked on "linux amd64 -> chrome", others not tested</h3>
-
-<br>
-
-<!--<p>Find me in app/views/my_list/index.html.erb</p>-->
-
-
-<h2>
-<a href="http://shotners.herokuapp.com/" target="_blank">short URL</a>  <br> <br>
-<a href="http://sharedoc.herokuapp.com/" target="_blank">Share documents</a>
-
-</h2>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span4">
+      <p class="pull-right"><%= image_tag("baner.jpg", :alt => "rss feed") %></p>
+    </div>
+    <div class="span4">
+      <br> <br> <br> <br> <br> <br>
+      <div class="accordion" id="my_app_list">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#my_app_list" href="#app_ShareDoc">app: ShareDoc</a>
+          </div>
+          <!--<div id="app_ShareDoc" class="accordion-body collapse in">-->
+          <div id="app_ShareDoc" class="accordion-body collapse">
+            <div class="accordion-inner">
+              Приложение позволяет загружать файлы на сервер и конечно же давать доступ другим пользователям к ним.
+              Чтобы Увидеть и скачать файл требуется, согласно задания зарегестрироваться.
+              Если пользователь расшарил документ для неизвестного адресса, то на этот адрес уходит ивайт.
+              <br> <br>
+              URL to app: <a href="http://sharedoc.herokuapp.com/" target="_blank">Share documents</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#my_app_list" href="#app_Short_URL">app: Short URL</a>
+          </div>
+          <div id="app_Short_URL" class="accordion-body collapse">
+            <div class="accordion-inner">
+              Сервис формирования коротких ссылок для ссылок введенных пользователем.
+              Можно создать ссылку анонимно, но тогда к ней имеют доступ все и оно будет отображаться да дашборде.
+              Можно зарегестрироваться и создать приватную ссылку "для себя" или же с паролем - при установке флажка.
+              Если установить флажок пароля, а пароль не вводить то ссылка будет публичной, но не будет отображаться на дашборде.
+              <br> <br>
+              URL to app: <<a href="http://shotners.herokuapp.com/" target="_blank">short URL</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+    </div>
+  </div>
+</div>
